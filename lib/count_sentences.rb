@@ -14,7 +14,7 @@ class String
     self.end_with?("!")
   end
 
-  def count_sentences
+  def count_sentences(sentence)
     newArray = self.split()
     count = 0 
     newArray.each(){|i| 
