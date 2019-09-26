@@ -17,8 +17,8 @@ class String
   def count_sentences
     newArray = self.split()
     count = 0 
-    newArray.each(){|i| 
-      count += 1 if i.include?("." || "?" ||"!")
+    newArray.map(){|i| 
+      count += 1 if i.end_with?(".") || i.end_with?("?") || i.end_with?("!")
     }
     return count 
   end
